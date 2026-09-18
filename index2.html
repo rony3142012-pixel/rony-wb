@@ -6,7 +6,7 @@
 .table-style2 {
 	width: 60%;
 	margin:20px auto;
-	border-collapse;collapse;
+	border-collapse:collapse;
 	border: 2px solid darkgreen;
 	}
 .table-style2 th,.table-style2 td {
@@ -22,6 +22,27 @@
 	margin:20px auto;
 	border: 2px solid navy;
 	}
+div.mycontainer {
+	width:66%;
+	overflow:auto;
+	}
+div.mycontainer div {
+	width 50%;
+	float:left;
+	}
+.list-style1 {
+	list-style-type: square;
+	color: darkblue;
+	text-align: left;
+	margin:20px;
+}
+.list-style2 {
+	list-style-type: circle;
+	color: red;
+	text-align: left;
+	margin:20px;
+}
+
 .table-style1 th,.table-style1 td {
 	border: 1px solid navy;
 	padding: 10px;
@@ -96,7 +117,13 @@ img {
 	width: 30%;
 	text-align: center;
 }
-	
+.video {
+	width: 44%;
+	margin: 10px auto;
+	text-align: center;
+	border: 3px solid green;
+	background-color: DarkTurquoise;
+	}
 </style>
 </head>
 <body>
@@ -183,25 +210,33 @@ target="_blank">rony3142012gmail.com</a></p>
 </table>
 </div>
 </div>
+
+<div class= "mycontainer">
+<div style= "background-color:LightCyan";>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class="list-style1">
 <li>Pitzza</li>
 <li>Fish</li>
 <li>Hash Bown</li>
 </ul>
-
-<h2>My Favorite Foods</h2>
-<ul>
+</div>
+<div style= "background-color: Indigo";>
+<h2>My Favorite Drinks</h2>
+<ul class="list-style2">
 <li>Crash</li>
 <li>Polish </li>
 <li>Cola</li>
 </ul>
+</div>
+</div>
 <br><br><br>
+<div class = "video">
 <h2>My Favorite Video</h2>
 <video width="480" height="360" controls>
 <source src="https://github.com/rony3142012-pixel/rony-wb/blob/main/I%20Met%20the%20Most%20Talkative%20Stray%20Cat%20Ever.mp4?raw=True">
 YOUR BROWSER DOES NOT SUPPORT THE VIDEO TAG.
 </video>
+</div>
 <h2>Embedded Website</h2>
 <iframe src="https://quirkycort.github.io/gears/public/"width="700"height="466"
 style="border:none;"></iframe>
